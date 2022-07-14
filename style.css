@@ -352,6 +352,104 @@ header{
 .card:hover .cardInfo{
     bottom: 0;
 }
+/* ===================================== */
+.sessaoContato{
+    width: 100%;
+    height: 100vh;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sessaoContato h1{
+    font-family: var(--fontPrimary);
+    color: #2a0845;
+    border-bottom: 3px solid #2a0845;
+    font-size: 3rem;
+    font-weight: 300;
+    width: fit-content;
+    margin: 0 auto;
+}
+.contatoWrapper{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    box-shadow: 0 2rem 3rem #000;
+}
+.contatoLeft{
+    width: 35%;
+    background-color: #2a0845;
+}
+.contatoLeft img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .5;
+}
+.contatoRight{
+    width: 65%;
+    background-color: #b1b1b1;
+}
+.contatoRight form{
+    width: 20rem;
+    margin: 2rem auto 0;
+}
+.inputGroup{
+    position: relative;
+}
+.inputGroup textarea{
+    padding-top: 1rem;
+    min-width: 20rem;
+    min-height: 2rem;
+    max-width: 20rem;
+    max-height: 5rem;
+}
+.field{
+    background-color: transparent;
+    border: none;
+    width: 20rem;
+    border-bottom: 1px solid #2a0845;
+    font-size: 1.5rem;
+    font-family: var(--fontSecundary);
+    height: 2rem;
+    outline: none;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.fieldLabel{
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    font-family: var(--fontSecundary);
+    text-transform: uppercase;
+    transition: .3s;
+}
+.field:focus ~ label{
+    top: 0rem;
+}
+.btnContato {
+    width: 8rem;
+    height: 2.5rem;
+    background: #6441A5;
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5, #2a0845);
+    background: linear-gradient(to right, #2a0845, #6441A5,#2a0845);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s all;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.btnContato:hover{
+    box-shadow: 2px 2px 4px #000;
+}
+.btnContato a{
+    color: #fff;
+    font-family: var(--fontAction);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
 /* Animation */
 @keyframes zoom {
     0%{
