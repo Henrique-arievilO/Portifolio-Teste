@@ -10,6 +10,9 @@
     list-style: none;
     text-decoration: none;
 }
+button{
+    cursor: pointer;
+}
 :root{
     --fontPrimary: "Baloo Da 2", serif;
     --fontSecundary: "Josefin Slab", serif;
@@ -445,6 +448,104 @@ header{
     box-shadow: 2px 2px 4px #000;
 }
 .btnContato a{
+    color: #fff;
+    font-family: var(--fontAction);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+/* ===================================== */
+.sessaoOrcamento{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/orcamentoBG.jpg);
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sessaoOrcamento h1{
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: #6441A5;
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5, #2a0845);
+    background: linear-gradient(to right, #2a0845, #6441A5,#2a0845);
+    padding: 0 3rem;
+    color: #f5f5f5;
+    font-size: 3rem;
+    font-family: var(--fontPrimary);
+    font-weight: 300;
+    text-shadow: 0.1rem 0.3rem 1rem #000;
+    border-radius: 10px;
+}
+.orcamentoWrapper{
+    width: 60%;
+    height: 80%;
+    background-color: #f5f5f599;
+    border-radius: 15px;
+    box-shadow: 0.1rem 0.3rem 1rem #000;
+    position: relative;
+}
+.orcamentoWrapper form{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.orcamentoWrapper label{
+    font-family: var(--fontSecundary);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.sessaoOrcamento input[type="number"] {
+    font-family: var(--fontSecundary);
+    width: 4rem;
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: .3rem;
+}
+.groupLayout div{
+    display: block;
+    margin-bottom: 1rem;
+}
+.orcamentoWrapper [type="checkbox"]{
+    margin-top: .5rem;
+}
+[type="range"] {
+    appearance: none;
+    width: 15rem;
+    height: 1rem;
+    border-radius: .5rem;
+    background-color: #927db8;
+}
+[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #2a0845;
+    border-radius: 1.5rem;
+}
+.btnOrcamento {
+    width: 8rem;
+    height: 2.5rem;
+    background: #6441A5;
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5, #2a0845);
+    background: linear-gradient(to right, #2a0845, #6441A5,#2a0845);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s all;
+    grid-column: 2;
+}
+.btnOrcamento:hover{
+    box-shadow: 2px 2px 4px #000;
+}
+.btnOrcamento a{
     color: #fff;
     font-family: var(--fontAction);
     font-size: 1.2rem;
